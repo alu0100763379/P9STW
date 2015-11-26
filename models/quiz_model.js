@@ -3,6 +3,7 @@ var Respuesta = require('./respuesta_model.js');
 var Corta = require('./pregunta_corta_model.js');
 var Larga = require('./pregunta_larga_model.js');
 var Simple = require('./seleccion_simple_model.js');
+var Multiple = require('./seleccion_multiple_model.js');
 var debug = require('debug');
 
 function Quiz() {
@@ -26,8 +27,8 @@ function Quiz() {
     { pregunta: new Corta('¿Cuántos años tiene un lustro?'),
       respuesta: new Respuesta(/^\s*5\s*$/i)
     },
-    { pregunta: new Larga('¿Cómo se llama el lugar rodeado de tres cuerdas donde pelean los boxeadores?'),
-      respuesta: new Respuesta(/^\s*ring\s*$/i)
+    { pregunta: new Multiple('¿Cómo se llama el lugar rodeado de tres cuerdas donde pelean los boxeadores?', ['Ring','Cuadrilatero','Montacargas']),
+      respuesta: new Respuesta(/^\s*ring\s*$/i, /^\s*cuadrilatero\s*$/i)
     },
     { pregunta: new Corta('¿Cuál es el color que representa la esperanza?'),
       respuesta: new Respuesta(/^\s*verde\s*$/i)

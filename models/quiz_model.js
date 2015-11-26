@@ -28,7 +28,7 @@ function Quiz() {
       respuesta: new Respuesta(/^\s*5\s*$/i)
     },
     { pregunta: new Multiple('¿Cómo se llama el lugar rodeado de tres cuerdas donde pelean los boxeadores?', ['Ring','Cuadrilatero','Montacargas']),
-      respuesta: new Respuesta(/^\s*ring\s*$/i, /^\s*cuadrilatero\s*$/i)
+      respuesta: new Respuesta(['Ring','Cuadrilatero'])
     },
     { pregunta: new Corta('¿Cuál es el color que representa la esperanza?'),
       respuesta: new Respuesta(/^\s*verde\s*$/i)

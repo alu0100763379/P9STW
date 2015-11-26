@@ -2,12 +2,13 @@ var AbstractQuiz = require('./abstract_quiz_model.js');
 var Respuesta = require('./respuesta_model.js');
 var Corta = require('./pregunta_corta_model.js');
 var Larga = require('./pregunta_larga_model.js');
+var Simple = require('./seleccion_simple_model.js');
 var debug = require('debug');
 
 function Quiz() {
   AbstractQuiz.call(this);
   this.q.push(
-    { pregunta: new Corta('¿Capital de Italia?'),
+    { pregunta: new Simple('¿Capital de Italia?', ['Roma','Moscú','Paris']),
       respuesta: new Respuesta(/^\s*roma\s*$/i)
     },
     { pregunta: new Corta('¿Qué animal tiene en su nombre las cinco vocales?'),

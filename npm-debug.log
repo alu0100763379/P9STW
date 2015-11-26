@@ -20,7 +20,7 @@
 11 error There is likely additional logging output above.
 12 error System Linux 3.2.0-60-generic-pae
 13 error command "/usr/bin/node" "/usr/bin/npm" "start"
-14 error cwd /home/alex/Escritorio/STWquizP8
+14 error cwd /home/alex/Escritorio/STWP9
 15 error node -v v0.10.40
 16 error npm -v 1.4.28
 17 error code ELIFECYCLE

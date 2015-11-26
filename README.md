@@ -1,9 +1,9 @@
-Quiz. Diseño Adaptativo, Despliegue en Heroku, Mejoras
+Quiz. Preguntas de Selección Simple y Preguntas de Selección Múltiple.
 ===================
-Octava práctica de la asignatura de Sistemas y Tecnologías Web donde se pretende hacer un diseño adaptativo para la práctica anterior, así como subir la misma a Heroku y añadir ciertas mejoras a las funcionalidades ya implementadas. 
+Novena práctica de la asignatura de Sistemas y Tecnologías Web donde se pretende mejorar la práctica anterior añadiendo preguntas de selección simple y selección múltiple. 
 
 Datos Adicionales 
 ----------------------------------------
 - Enlace a mi página personal: http://alu0100763379.github.io/
-- Enlace a la práctica en Heroku: https://quiiz2015.herokuapp.com/
+- Enlace a la práctica en Heroku: https://quiz-multirespuesta.herokuapp.com/
 - Contacto: alu0100763379@ull.edu.es

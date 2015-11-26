@@ -18,23 +18,14 @@ function Quiz() {
     { pregunta: new Corta('¿Qué animal tiene en su nombre las cinco vocales?'),
       respuesta: new Respuesta(/^\s*murci[eé]lago\s*$/i)
     },
-    { pregunta: new Corta('Si me nombras desaparezco. ¿Qué soy?'),
-      respuesta: new Respuesta(/^\s*silencio\s*$/i)
-    },
     { pregunta: new Larga('Si: 111 = 13, 112 = 24, 113 = 35, 114 = 46. Entonces 115 = ?'),
       respuesta: new Respuesta(/^\s*57\s*$/i)
-    },
-    { pregunta: new Larga('No estoy vivo pero crezco. No tengo pulmones pero necesito el aire. No tengo boca pero el agua me mata. ¿Qué soy?'),
-      respuesta: new Respuesta(/^\s*fuego\s*$/i)
     },
     { pregunta: new Simple('¿Cuántos años tiene un lustro?',['10','5','100','50']),
       respuesta: new Respuesta(/^\s*5\s*$/i)
     },
     { pregunta: new Corta('¿Cómo se llama el lugar rodeado de tres cuerdas donde pelean los boxeadores?'),
       respuesta: new Respuesta(/^\s*ring\s*$/i)
-    },
-    { pregunta: new Simple('¿Cuál es el color que representa la esperanza?',['Rojo','Azul','Verde','Amarillo']),
-      respuesta: new Respuesta(/^\s*verde\s*$/i)
     },
     { pregunta: new Simple('¿Qué cantidad de huesos tiene en total el ser humano?',['63','111','206','302']),
       respuesta: new Respuesta(/^\s*206\s*$/i)

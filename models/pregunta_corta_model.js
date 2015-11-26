@@ -7,7 +7,7 @@ function PreguntaCorta(prgt){
 
 
 PreguntaCorta.prototype.get_prgt_type = function(){
-  return this.kind;
+  return this.type;
 }
 
 PreguntaCorta.prototype.get_prgt = function(){

@@ -14,7 +14,7 @@ function Respuesta(rpt){
       var resultado = true;
 
       for(var i=0; i<rpt.length; i++){
-        if(rpt[i] != x[i]) x = false;
+        if(rpt[i] != x[i]) resultado = false;
       }
 
       return resultado;

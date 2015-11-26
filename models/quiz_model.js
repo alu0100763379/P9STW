@@ -9,8 +9,11 @@ var debug = require('debug');
 function Quiz() {
   AbstractQuiz.call(this);
   this.q.push(
-    { pregunta: new Simple('¿Capital de Italia?', ['Roma','Moscú','Paris']),
+    { pregunta: new Simple('¿Capital de Italia?', ['Roma','Moscú','Paris','Madrid']),
       respuesta: new Respuesta(/^\s*roma\s*$/i)
+    },
+    { pregunta: new Multiple('¿En qué peliculas de la siguiente lista sale Vin Diesel?',['Fast and Furious','Iron Man','Las Crónicas de Riddick','Viaje al Centro de la Tierra']),
+      respuesta: new Respuesta(['Fast and Furious','Las Crónicas de Riddick'])
     },
     { pregunta: new Corta('¿Qué animal tiene en su nombre las cinco vocales?'),
       respuesta: new Respuesta(/^\s*murci[eé]lago\s*$/i)
@@ -24,17 +27,20 @@ function Quiz() {
     { pregunta: new Larga('No estoy vivo pero crezco. No tengo pulmones pero necesito el aire. No tengo boca pero el agua me mata. ¿Qué soy?'),
       respuesta: new Respuesta(/^\s*fuego\s*$/i)
     },
-    { pregunta: new Corta('¿Cuántos años tiene un lustro?'),
+    { pregunta: new Simple('¿Cuántos años tiene un lustro?',['10','5','100','50']),
       respuesta: new Respuesta(/^\s*5\s*$/i)
     },
-    { pregunta: new Multiple('¿Cómo se llama el lugar rodeado de tres cuerdas donde pelean los boxeadores?', ['Ring','Cuadrilatero','Montacargas']),
-      respuesta: new Respuesta(['Ring','Cuadrilatero'])
+    { pregunta: new Corta('¿Cómo se llama el lugar rodeado de tres cuerdas donde pelean los boxeadores?'),
+      respuesta: new Respuesta(/^\s*ring\s*$/i)
     },
-    { pregunta: new Corta('¿Cuál es el color que representa la esperanza?'),
+    { pregunta: new Simple('¿Cuál es el color que representa la esperanza?',['Rojo','Azul','Verde','Amarillo']),
       respuesta: new Respuesta(/^\s*verde\s*$/i)
     },
-    { pregunta: new Corta('¿Qué cantidad de huesos tiene en total el ser humano?'),
+    { pregunta: new Simple('¿Qué cantidad de huesos tiene en total el ser humano?',['63','111','206','302']),
       respuesta: new Respuesta(/^\s*206\s*$/i)
+    },
+    { pregunta: new Multiple('¿Cuáles de los siguientes superheroes no tienen superpoderes?',['Superman','Flash','Green Arrow','Batman']),
+      respuesta: new Respuesta(['Green Arrow','Batman'])
     },
     {
       pregunta: new Corta('¿Quién reinaba en España cuando se descubrió América?'),

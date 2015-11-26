@@ -23,7 +23,7 @@ exports.questions = function(req,res) {
   var array = new Array(num_question);
 
   for(var i=0; i<num_question; i++) {
-    array[i] = ("Pregunta " + (i+1) + ": " + quiz.get_question(i));
+    array[i] = (quiz.get_question(i));
   }
 
   res.render('quizes/questions', {prg: array})

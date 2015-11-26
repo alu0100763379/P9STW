@@ -11,7 +11,7 @@ Pregunta.prototype.get_prgt = function(){
   return this.prgt;
 }
 
-Pregunta.prototype.Type = function() {
+Pregunta.prototype.Kind = function() {
   if(this instanceof PreguntaCorta){
     this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
   }
